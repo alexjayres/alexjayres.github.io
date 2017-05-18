@@ -1,4 +1,4 @@
-# innovations
+# innovation
 
 to do
 
@@ -9,6 +9,7 @@ to do
 ## Creator
 
 alex ayres
+
 ## Copyright and License
 
 alex ayres
