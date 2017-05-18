@@ -1,6 +1,6 @@
 # innovations
 
-to do1
+to do
 
 ## Getting Started
 
