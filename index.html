@@ -32,16 +32,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<!-- Jira Issue Collector -->
-	<script type="text/javascript" src="https://alm.deveng.io/jira/s/72ac8833297cb772db5d9bdd3a55ece1-T/en_USo4nbfc/70107/6cc9c60e92362166965dc9c47adada0a/2.0.7/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=814585ca"></script>
-    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
-	"triggerFunction": function(showCollectorDialog) {
-		//Requires that jQuery is available! 
-		jQuery("#myCustomTrigger").click(function(e) {
-			e.preventDefault();
-			showCollectorDialog();
-		});
-	}};</script>
+
+
+    <!-- Light box -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.css" rel="stylesheet">
+
+    
 	
 	
 </head>
@@ -61,17 +57,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-				                  <li>
+				    <li>
                         <a class="page-scroll" href="#services">Why innovate?</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">How can I help?</a>
                     </li>
-  
-
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>    
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?usp=sf_link" class="" data-title="Submit an idea" data-toggle="lightbox" data-gallery="remoteload">Submit a problem or idea</a>
+                    </li>li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -89,8 +86,21 @@
 				<p>We explore new ideas and challenge the status-quo</p>
 
 				<p>We seek new ways of delighting our customers and supporting our colleagues</p>
-                <a href="#services" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-lg-offset-3 text-center">
+                        <a href="#services" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?usp=sf_link" class="btn btn-secondary btn-xl" data-title="Submit an idea" data-toggle="lightbox" data-gallery="remoteload">Submit a problem or idea</a>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -145,7 +155,9 @@
                     <p class="text-faded">Is there a customer or colleague problem you’re aware of that needs fixing?</p>
 					<p class="text-faded">Do you have an idea that could improve the experience for an Argos customer or colleague?</p>
 					<p class="text-faded">If so, click the button below and tell us about it! If it’s something we can help to fix, we’ll take a look and let you know how we get on.</p>
-					<a class="page-scroll btn btn-default btn-xl sr-button" id="myCustomTrigger">Submit a problem or idea</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?usp=sf_link" class="btn btn-default btn-xl sr-button" data-title="Submit an idea" data-toggle="lightbox" data-gallery="remoteload">Submit a problem or idea</a>
+
+
 				</div>
             </div>
         </div>
@@ -190,6 +202,15 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <!-- lightbox -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+        });
+    </script>
 
 </body>
 

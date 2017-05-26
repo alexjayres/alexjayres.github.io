@@ -350,6 +350,7 @@ fieldset[disabled] .btn-default.active {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+  width: 260px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -398,6 +399,69 @@ fieldset[disabled] .btn-primary.active {
   color: #F05F40;
   background-color: white;
 }
+
+
+.btn-secondary {
+  color: white;
+  background-color: #D43900;
+  border-color: #D43900;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  width: 260px;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  color: white;
+  background-color: #E65722;
+  border-color: #E65722;
+}
+.btn-secondary:active,
+.btn-secondary:active:hover,
+.btn-secondary.active,
+.btn-secondary.active.hover,
+.open > .dropdown-toggle.btn-secondary {
+  background-image: none;
+  background-color: #AA2E00;
+  border-color: #AA2E00;
+}
+
+
+
+.btn-secondary.disabled,
+.btn-secondary[disabled],
+fieldset[disabled] .btn-secondary,
+.btn-secondary.disabled:hover,
+.btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:focus,
+fieldset[disabled] .btn-secondary:focus,
+.btn-secondary.disabled.focus,
+.btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary.focus,
+.btn-secondary.disabled:active,
+.btn-secondary[disabled]:active,
+fieldset[disabled] .btn-secondary:active,
+.btn-secondary.disabled.active,
+.btn-secondary[disabled].active,
+fieldset[disabled] .btn-secondary.active {
+  background-color: #AA2E00;
+  border-color: #AA2E00;
+}
+.btn-secondary .badge {
+  color: #AA2E00;
+  background-color: white;
+}
+
+
+
+
+
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
@@ -452,3 +516,4 @@ body {
 	  width: 48px;
   height: 48px;
 }
+
