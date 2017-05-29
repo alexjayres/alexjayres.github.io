@@ -534,5 +534,6 @@ body {
 .mfp-wrap {
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translateZ(0);
+    overflow: auto;
    
 }
