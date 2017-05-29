@@ -537,3 +537,8 @@ body {
     overflow: auto;
    
 }
+
+.mfp-iframe-scaler {
+    
+     overflow: auto;
+}
