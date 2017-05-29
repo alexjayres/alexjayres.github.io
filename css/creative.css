@@ -419,6 +419,7 @@ fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #E65722;
   border-color: #E65722;
+  
 }
 .btn-secondary:active,
 .btn-secondary:active:hover,
@@ -470,6 +471,13 @@ fieldset[disabled] .btn-secondary.active {
   text-transform: uppercase;
   margin-top: 20px;
 }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+
 .btn-xl {
   padding: 15px 30px;
 }
@@ -521,3 +529,4 @@ body {
     width:300px;
     height:100%;
  }
+
