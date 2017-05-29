@@ -155,7 +155,7 @@
                     <p class="text-faded">Is there a customer or colleague problem you’re aware of that needs fixing?</p>
 					<p class="text-faded">Do you have an idea that could improve the experience for an Argos customer or colleague?</p>
 					<p class="text-faded">If so, click the button below and tell us about it! If it’s something we can help to fix, we’ll take a look and let you know how we get on.</p>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?usp=sf_link" class="btn btn-default btn-xl sr-button" data-title="Submit an idea" data-toggle="lightbox" data-gallery="remoteload">Submit a problem or idea</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?usp=sf_link" class="btn btn-default btn-xl sr-button google-form">Submit a problem or idea</a>
 
 
 				</div>
@@ -179,7 +179,7 @@
                     <!--<i class="yi sr-contact"></i>/-->
 					<!--<i class="fa fa-comments fa-3x sr-contact"></i>/-->
 					<img src="img/yammer.svg" height="42px" class="sr-contact"></img>
-                    <p><a href="https://www.yammer.com/homeretailgroup.com/#/threads/inGroup?type=in_group&feedId=10075377&view=all">Yammer</a></p>
+                    <p><a href="https://www.yammer.com/homeretailgroup.com/#/threads/inGroup?type=in_group&feedId=10075377&view=all"  target="_blank">Yammer</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
@@ -209,6 +209,13 @@
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
+        });
+    </script>
+    
+    <script>
+        $('.google-form').magnificPopup({
+          type: 'iframe'
+          // other options
         });
     </script>
 
