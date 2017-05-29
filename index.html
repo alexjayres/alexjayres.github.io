@@ -199,7 +199,11 @@
     <script>
         $('.google-form').magnificPopup({
           type: 'iframe',
-            fixedContentPos: true
+            //fixedContentPos: true,
+            //callbacks: {
+        //beforeOpen: function() { $('html').addClass('mfp-helper'); },
+       // close: function() { $('html').removeClass('mfp-helper'); }
+           // }
           // other options
         });
     </script>
