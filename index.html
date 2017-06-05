@@ -60,7 +60,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>    
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?embedded=true" class="google-form no-outline">Submit a problem or idea</a>
+                        <a href="#" class="google-form no-outline">Submit a problem or idea</a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +87,7 @@
                         <a href="#services" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
                     </div>
                     <div class="col-lg-3 text-center">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?embedded=true" class="btn btn-secondary btn-xl google-form">Submit a problem or idea</a>
+                        <a href="#" class="btn btn-secondary btn-xl google-form">Submit a problem or idea</a>
                     </div>
 
 
@@ -148,7 +148,7 @@
                     <p class="text-faded">Is there a customer or colleague problem you’re aware of that needs fixing?</p>
 					<p class="text-faded">Do you have an idea that could improve the experience for an Argos customer or colleague?</p>
 					<p class="text-faded">If so, click the button below and tell us about it! If it’s something we can help to fix, we’ll take a look and let you know how we get on.</p>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?embedded=true" class="btn btn-default btn-xl sr-button google-form">Submit a problem or idea</a>
+					<a href="#" class="btn btn-default btn-xl sr-button google-form">Submit a problem or idea</a>
 
 
 				</div>
@@ -198,9 +198,16 @@
     
     <script>
         $('.google-form').magnificPopup({
-          type: 'iframe',
-            fixedContentPos: true
+          //type: 'iframe',
+            //fixedContentPos: true
           // other options
+            
+            
+            items: {
+    src: 'https://docs.google.com/forms/d/e/1FAIpQLSd8-WPqANfheZmwiJrXOUhpJcGuZhLF2PJrE1PN3CXfS9ryYQ/viewform?embedded=true',
+    type: 'iframe',
+             fixedContentPos: true
+  }
         });
     </script>
 
