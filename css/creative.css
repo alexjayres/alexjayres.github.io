@@ -541,9 +541,9 @@ body {
 .mfp-iframe-scaler {
     
      overflow: auto;
-}*/s
+}
 
 a:focus {
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: -2px;
-}
+}*/
